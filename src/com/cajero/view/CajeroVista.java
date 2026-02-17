@@ -3,14 +3,13 @@ package com.cajero.view;
 import java.util.Scanner;
 
 public class CajeroVista {
-    // Escaner para leer del teclado
+
     private Scanner scanner;
 
     public CajeroVista() {
         this.scanner = new Scanner(System.in);
     }
 
-    // Metodo para imprimir cosas
     public void mostrarMensaje(String m) {
         System.out.println(m);
     }
@@ -29,7 +28,7 @@ public class CajeroVista {
         System.out.println("4. Salir");
         System.out.print("Escriba el numero de la opcion: ");
         int op = scanner.nextInt();
-        scanner.nextLine(); // para que no se salte el proximo scanner
+        scanner.nextLine();
         return op;
     }
 

@@ -5,16 +5,15 @@ import com.cajero.view.CajeroVista;
 
 public class Main {
     public static void main(String[] args) {
-        // Creamos el controlador y la vista
+
         CajeroControlador control = new CajeroControlador();
         CajeroVista view = new CajeroVista();
 
         view.mostrarMensaje("=== Bienvenido al Cajero (MVC) ===");
 
         int intentos = 0;
-        boolean entro = false; // flag para saber si entro al sistema
+        boolean entro = false;
 
-        // Ciclo para pedir el PIN maximo 3 veces
         while (intentos < 3 && entro == false) {
             String p = view.leerPin();
             if (control.validarPin(p)) {
@@ -32,7 +31,7 @@ public class Main {
 
         view.mostrarMensaje("Bienvenido, " + control.getUsuarioActual().getNombre());
 
-        boolean s = false; // s de salir
+        boolean s = false;
         while (s == false) {
             int opc = view.mostrarMenu();
 
