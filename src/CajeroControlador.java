@@ -1,7 +1,8 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class CajeroControlador {
-    private ArrayList<Usuario> usuarios;
+    private List<Usuario> usuarios;
     private Usuario usuarioActual;
 
     public CajeroControlador() {
