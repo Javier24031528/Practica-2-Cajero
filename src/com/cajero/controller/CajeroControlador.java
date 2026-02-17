@@ -18,15 +18,13 @@ public class CajeroControlador {
     }
 
     public boolean validarPin(String pin) {
-        boolean encontrado = false;
         for (Usuario u : usuarios) {
             if (u.getPin().equals(pin)) {
                 usuarioActual = u;
-                encontrado = true;
-                break; // romper el ciclo
+                return true; // si lo encuentra
             }
         }
-        return encontrado;
+        return false; // no lo encontro
     }
 
     public Usuario getUsuarioActual() {

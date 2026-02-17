@@ -1,4 +1,4 @@
-package com.cajero.main;
+package com.cajero;
 
 import com.cajero.controller.CajeroControlador;
 import com.cajero.view.CajeroVista;
